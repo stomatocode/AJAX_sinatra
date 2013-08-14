@@ -5,9 +5,10 @@ $(document).ready(function() {
     $.ajax({
       type: this.method,
       url: this.action,
-      data: $(this).serialize();
+      data: $(this).serialize()
       }).done(function(server_data){
-        
-      })
+        console.log(server_data);
+        $('.reply').replaceWith(server_data);
+      });
   });
 });

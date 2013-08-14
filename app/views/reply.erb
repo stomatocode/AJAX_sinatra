@@ -1,1 +1,7 @@
-<span id="grandma_says"><%= @grandma %></span>
+<div class='reply'>
+<% if @grandma %>
+  <div id='response'>
+    <p>Grandma says: <span id="grandma_says"><%= @grandma %></span> </p>
+  </div>
+<% end %>
+</div>
