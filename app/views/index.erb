@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Deaf Grandma</h1>
+  <% if @grandma %>
+    <p>Grandma says: </p>
+  <% end %>
+
+  <form class='talk' action="/grandma" method="post">
+    Say something to Grandma:
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Say it!">
+  </form>
+</div>
+<!-- "text" is not a data structure type, but a type of form input for HTML, e.g. radio, checkbox, -->
